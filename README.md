@@ -40,13 +40,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+middleware and route
+
 - [ ] Describe Middleware?
+
+middleware is a function that happens before endpoint
 
 - [ ] Describe a Resource?
 
+resource is an item/s on the database
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+by giving the endpoints status code of 200
+
 - [ ] How can we partition our application into sub-applications?
+
+we can use routes to partition our app into sub-apps
 
 ## Minimum Viable Product
 

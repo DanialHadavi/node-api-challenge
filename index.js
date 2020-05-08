@@ -1,3 +1,22 @@
+const express = require("express");
+const cors = require("cors");
+const server = express();
+const port = process.env.PORT || 5500;
+const projectsRoutes = require("./routes/projects");
+const actionsRoutes = require("./routes/actions");
+
+server.use(express.json());
+server.use(cors());
+
+server.use("/api/projects", projectsRoutes);
+server.use("/api/actions", actionsRoutes);
+
+server.get("/", (req, res) => {
+  res.status(200).json({ message: "ok" });
+});
+server.listen(port, () => {
+  console.log("listening on " + port);
+});
 /*
 play this: https://www.youtube.com/watch?v=d-diB65scQU
 
